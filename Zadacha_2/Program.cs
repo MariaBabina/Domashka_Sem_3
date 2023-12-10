@@ -4,10 +4,10 @@
 //массив [1 8 43 4 55 60 3 2 1 3] => 4
 
 int [] array = new int [10];
-
+Random random = new Random();
 for (int i = 0; i < array.Length; i++)
 {
-    array [i] = new Random().Next (0,21);
+    array [i] = random.Next (0,21);
     System.Console.Write(array[i]+" ");
 }
 Console.WriteLine();
